@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+	<head>		
+		<title id="pagetitle">Audio Visualizer</title>
+		
+		<link href="audicon.ico" rel="shortcut icon" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript" src="dat.gui.min.js"></script>
+	</head>
+	
+	<body onload="initPage()">
+		
+		<canvas id="visualizer_render"></canvas>
+		<video muted loop id="bgvid">
+			<source src="loop_bw_1.mp4" type="video/mp4">
+		</video>
+		<div id="fps"></div>	
+			
+		<div id="hideBody">
+			
+			<div id="controls">
+									
+				<div id="button_pause">
+					<button
+						type="button"
+						class="button"
+						onclick="togglepause()"
+						style="position: absolute; right: 100px;"
+					>&#10074;&#10074;</button>
+				</div>
+				
+			</div>
+			
+		</div>
+	</body>
+	
+</html>
